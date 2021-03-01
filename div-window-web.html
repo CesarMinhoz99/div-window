@@ -1,0 +1,37 @@
+<html lang="pt"><head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="icon" href="wallpaper.jpg">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <link rel="stylesheet" href="http://class-div-window.surge.sh/css/jsBodyPage.css">
+   <link rel="stylesheet" href="http://class-div-window.surge.sh/css/jsWindow.css">
+       
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+
+</head>
+<body style="cursor: default;">
+
+   <button id="newWindow"> Create New window </button>
+
+   <script type="text/javascript" src="http://class-div-window.surge.sh/js/jsWindow.js"></script>
+   <script type="text/javascript" src="http://class-div-window.surge.sh/js/jsWindowGlobalMousePosition.js"></script>
+   <script>
+     var buttonNewWindow = document.getElementById("newWindow");
+      buttonNewWindow.addEventListener('click', () => {
+        
+         jswindown = new JsWindow(
+         '<h1> TITLE </h1>', 
+          "Lorem Ipsum is simmyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummyLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          );
+
+         jswindown.fill();
+
+      });
+   </script>
+
+
+
+</body></html>
