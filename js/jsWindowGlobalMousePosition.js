@@ -5,16 +5,12 @@ var globalZindex = 0;
 var getX, getY;
 var flag = false;
 
-
-document.body.addEventListener("mousedown", () => {
-    DivWindow = document.querySelectorAll(".window");
-    DivWindow.forEach((item, index) => {
-      DivWindow[index].addEventListener("mousedown", () => {
-        DivWindow[index].style.zIndex = globalZindex++;
-        document.body.style.cursor = "none";
-        flag = true;
-        actualIndex = index;
-      });
+  DivWindow.forEach((item, index) => {
+    DivWindow[index].addEventListener("mousedown", () => {
+      DivWindow[index].style.zIndex = globalZindex++;
+      document.body.style.cursor = "none";
+      flag = true;
+      actualIndex = index;
     });
   });
   
@@ -28,6 +24,7 @@ document.body.addEventListener("mousedown", () => {
       DivWindow[actualIndex].style.marginLeft = `${(getX *= 0.75)}px`;
       DivWindow[actualIndex].style.marginTop  = `${(getY *= 0.75)}px`;
     }
+    DivWindow = document.querySelectorAll(".window");
   });
   
   function init() {
