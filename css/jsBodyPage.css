@@ -1,0 +1,8 @@
+*{font-family: 'Roboto', sans-serif;}
+
+body {
+	/*get global mouse mosition*/
+	width: 100vw; 
+	height: 100vh;
+	position: fixed;
+}
